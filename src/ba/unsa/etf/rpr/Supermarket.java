@@ -4,6 +4,10 @@ public class Supermarket {
     private Artikl[] artikli = new Artikl[1000];
     private int brArtikala = 0;
 
+    public int getBrArtikala() {
+        return brArtikala;
+    }
+
     public boolean dodajArtikl(Artikl a) {
         if(brArtikala >= 1000) return false;
         artikli[brArtikala] = a;
